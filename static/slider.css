@@ -1,0 +1,47 @@
+  .slider-container {
+    position: relative;
+    margin: 50px 92px;
+    overflow: hidden;
+    margin-top: 50px;
+
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 45px;
+  }
+
+  .slide {
+    min-width: 100%;
+    overflow: hidden;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dot-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #717171;
+  }
+
+  /* CONTAINER-01 */
+  .container-01-list {
+    border-radius: 15px;
+  }

@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand;
+    color: #fff;
+}
+
+body {
+    background-image: url('../assets/image/contact.jpg');
+    background-size: cover;
+    /* Đảm bảo ảnh phủ toàn bộ phần nền */
+    background-position: center;
+    /* Canh giữa ảnh */
+    background-repeat: no-repeat;
+    /* Không lặp lại ảnh */
+}
+
+.header {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#header_img {
+    width: 100%;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.031rem 5.75rem;
+    z-index: 1;
+}
+
+.header button {
+    display: flex;
+    position: absolute;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    /* font */
+    color: #FFF;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 66.32911392405063vh;
+}
+
+.header button:active {
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub_nav_bar #icon {
+    height: 24px;
+}
+
+a:hover {
+    color: #055F4D;
+}
+
+.nav_bar #logo {
+    margin-right: 4.063rem;
+    width: 165px;
+}
+
+.nav_bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.nav_bar ul li {
+    margin-right: 2.813rem;
+    color: #1F1208;
+}
+
+.nav_bar ul li:last-child {
+    margin-right: 0;
+}
+
+.sub_nav_bar {
+    margin-left: auto;
+}
+
+.sub_nav_bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.sub_nav_bar ul li:last-child {
+    margin-right: 0;
+}
+
+/* Basic styling for the search bar container */
+.search-bar-container {
+    height: 24px;
+    display: flex;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rbga(0, 0, 0, 0.3);
+}
+
+.search-bar-container:hover input {
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 25px rbga(0, 0, 0, 0.3);
+    text-align: center;
+    margin-right: 30px;
+    color: #000;
+}
+
+.search-bar-container input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#header_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* CONTAINER */
+.container-01 {
+    display: flex;
+    padding-right: 92px;
+    padding-left: 92px;
+    justify-content: space-between;
+    gap: 140px;
+
+}
+
+.get-in-touch {
+    display: inline-flex;
+    padding: 25px 53px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    height: 337px;
+}
+
+.get-in-touch h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Abhaya Libre;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.get-in-touch p {
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.get-in-touch button {
+    display: flex;
+    width: 299px;
+    padding: 10px 86px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background: var(--Primary-Colour-05, #055F4D);
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 145%;
+    /* 29px */
+}
+
+
+.open {
+    display: flex;
+    width: 405px;
+    height: 261px;
+    padding: 30px 74px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    border-radius: 10px;
+    background: var(--Primary-Colour-05, #055F4D);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    margin-top: 110px;
+}
+
+.open h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Abhaya Libre;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.open p {
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.open button {
+    display: flex;
+    width: 193px;
+    padding: 8px 54px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* 29px */
+    border-radius: 10px;
+    background: var(--Primary-Colour-00, linear-gradient(0deg, #FFF 0%, #FFF 100%), #055F4D);
+    border: none;
+    color: var(--Primary-Colour-05, #055F4D);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 145%;
+    /* 29px */
+}
+
+/* CONTAINER 02 */
+.container-02 {
+    display: flex;
+    padding: 50px 107px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.contact-us {
+    display: flex;
+    width: 830px;
+
+    padding: 30px 107px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.60);
+}
+
+.contact-us input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.form-input {
+    margin-top: -10px;
+    width: 100%;
+    height: 35px;
+    outline: none;
+    color: #000;
+    font-size: 18px;
+
+}
+
+.contact-us h1 {
+    color: #000;
+    text-align: center;
+    font-family: Abhaya Libre;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.contact-us h2 {
+    color: #000;
+    text-align: center;
+    font-family: Abhaya Libre;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.contact-us label {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact-us p {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact-us button {
+    display: flex;
+    width: 193px;
+    padding: 8px 134px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* 29px */
+    border-radius: 10px;
+    background: var(--Primary-Colour-05, #055F4D);
+    border: none;
+    color: #fff;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 145%;
+    white-space: nowrap;
+    /* 29px */
+}
+
+.button-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* CONTAINER-04 */
+
+.container-04 {
+    display: flex;
+    padding: 50px 92px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 61px 25px;
+    border-radius: 8px 0px 0px 8px;
+    background: rgba(255, 255, 255, 0.70);
+}
+
+.left-section h1 {
+    color: #000;
+    font-family: Abhaya Libre;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.left-section p {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.left-section form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.left-section input {
+    display: flex;
+    width: 216px;
+    padding: 12px 5px 12px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid var(--Primary-Colour-05, #055F4D);
+    background: #FFF;
+    outline: none;
+    color: #000;
+}
+
+.left-section button {
+    border: none;
+    width: 43px;
+    height: 43px;
+    border-radius: 0px 15px 15px 0px;
+    background: var(--Primary-Colour-05, #055F4D);
+}

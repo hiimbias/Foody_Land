@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Infinite Card Slider JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../static/homepage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="../static/homepage.css">
+</head>
+
+<html>
+
+<body>
+  <div class="carousel-wrap">
+    <i id="backbtn" class="fa-solid fa-angle-left"></i>
+    <div class="carousel-inner">
+      <div class="carousel-holder">
+        <img src="../assets/image/image-slider-01.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-02.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-03.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-04.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-05.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-06.jpg" alt="Image 1">
+      </div>
+      <div class="carousel-holder">
+        <img src="../assets/image/image-slider-01.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-02.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-03.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-04.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-05.jpg" alt="Image 1">
+        <img src="../assets/image/image-slider-06.jpg" alt="Image 1">
+      </div>
+    </div>
+    <i id="nextbtn" class="fa-solid fa-angle-right"></i>
+    <!-- Add more cards as needed -->
+  </div>
+  <script>
+    let scrollContainer = document.querySelector(".carousel-inner");
+    let backbtn = document.getElementById("backbtn");
+    let nextbtn = document.getElementById("nextbtn");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextbtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft += 250*6;
+    });
+    backbtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft -= 250*6;
+    });
+  </script>
+</body>
+
+</html>
